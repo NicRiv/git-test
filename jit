@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+archivo=$1
+mensaje=$2
+{ git add $archivo } || { echo "El archivo <$archivo> no esta para agregar" } && { git commit -m "$mensaje" } && { echo "$arhivo -> listo." } 
+
