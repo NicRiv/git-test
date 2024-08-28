@@ -2,5 +2,12 @@
 
 archivo=$1
 mensaje=$2
-{ git add $archivo } || { echo "El archivo <$archivo> no esta para agregar" } && { git commit -m "$mensaje" } && { echo "$arhivo -> listo." } 
+#{ git add $archivo } || { echo "El archivo <$archivo> no esta para agregar" } && { git commit -m "$mensaje" } && { echo "$arhivo -> listo." } 
+#echo $archivo
+#echo $mensaje
+
+
+git add $archivo
+git commit -m "$mensaje"
+echo -e "\n<$archivo> agregado."
 
